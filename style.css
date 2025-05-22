@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
     
     
 }
@@ -15,6 +15,8 @@ img{
     object-fit:cover;
     width: 50px;
     height: 50px;
+    object-fit: cover;
+
 }
 
 .logo_img{
@@ -25,11 +27,16 @@ img{
 }
 
 .home_img{
+    border-radius: 10px;
     width: 30%;
     height: 40%;
-    border-radius: 10px;
-    object-fit: cover;
 }
+
+/* .home_img{
+    /* width: 30%;
+    height: 40%; */
+    
+*/
 
 .card_img{
     width: 50%;
@@ -49,7 +56,7 @@ header{
     justify-content: space-between;
     align-items: center;
     /* padding: 30px; */
-   gap: 10px;;
+    gap: 10px;;
 
 }
 
@@ -157,7 +164,16 @@ main{
     padding: 20px;
 }
 
+.introduce .button{
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    padding: 10px;
+    white-space: nowrap;  
+    color: #104573;
+    overflow: hidden;
 
+}
 
 /*footer*/
 footer{
@@ -187,30 +203,26 @@ footer ul li a{
     font-size: 20px;
 }
 
+.logo_img_ft{
+    
+    margin-top: 10px;
+    width: auto; /* Cho phép giữ tỷ lệ ảnh */
+    height: 40px; /* Chiều cao ổn định, bạn có thể tăng giảm */
+    object-fit: contain; /* Giúp ảnh không bị méo */
+    
+}
+
 /*media query*/
 @media screen and (max-width: 600px){
+    
     /* .header_home{
         flex-direction: column;
         align-items: center;
-    }
-    .header_home ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .header_home li a{
-        padding: 10px;
-    }
-    .introduce1{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card_4{
-        flex-direction: column;
     } */
 
-    .header_home{
-        flex-direction: column;
-        align-items: center;
+    body{
+        /* font-size: 14px; */
+         font-size: clamp(0.75rem, 2.5vw, 0.875rem);
     }
 
     nav{
@@ -221,6 +233,84 @@ footer ul li a{
     nav.show{
         display: block;
     }
+  
+    /* .header_home ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    } */
+
+    .introduce .button{
+        width: 80%;
+    }
+
+    .introduce1{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+    }
+
+    .introduce1 .home_img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+   
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    body{
+        /* font-size: 20px; */
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+    }
+    
+    .home_img{
+        width: 50%;
+        
+    }
+
+    .introduce .button{
+        width: 50%;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    body{
+        /* font-size: 20px; */
+        font-size: clamp(1rem, 2.5vw, 1.125rem);
+    }
+
+   
+
+    .introduce .button{
+       
+        font-size: 20px;
+    }
+    
+}
+
+/* @media screen and (max-width: 900px){
+
+    *{
+        font-size: 20px;
+    }
+
+    .header_home{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+   
+   
   
     .header_home ul{
         flex-direction: column;
@@ -239,8 +329,37 @@ footer ul li a{
         width: 100%;
     }
 
-    .logo_img{
-        margin: 0;
+} */
+/* 
+@media screen and (max-width: 1200px){
+
+    *{
+        font-size: 20px;
     }
 
-}
+    .header_home{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+  
+    .header_home ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .introduce1{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .home_img{
+        flex:1;
+        width: 100%;
+    }
+    
+} */
