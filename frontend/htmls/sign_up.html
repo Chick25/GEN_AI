@@ -7,32 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="../style1.css">
-    <!-- <script>
-        function validateForm(event) {
-            event.preventDefault(); 
-
-            const passwordInput = document.querySelector('input[type="password"]');
-            const password = passwordInput.value;
-            const errorMessage = document.getElementById("error-message");
-
-            
-            const lengthValid = password.length >= 8;
-            const hasUppercase = /[A-Z]/.test(password);
-            const hasNumber = /\d/.test(password);
-
-            if (!lengthValid || !hasUppercase || !hasNumber) {
-                errorMessage.textContent = "Mật khẩu phải có ít nhất 8 ký tự, 1 chữ hoa và 1 số.";
-                return false;
-            }
-
-            errorMessage.textContent = ""; 
-            const buttonElement = document.querySelector("button");
-            buttonElement.addEventListener("click", () => {
-                alert("Mật khẩu hợp lệ! Đăng ký thành công.");
-            });
-            return true;
-        }
-    </script> -->
+    
 </head>
 <body>
     <form id='signup_form' method="POST" >
