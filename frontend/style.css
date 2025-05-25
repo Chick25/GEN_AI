@@ -121,9 +121,6 @@ nav li a{
 
 }
 
-
-
-
 .hamburger{
     display: none;
     flex-direction: column;
@@ -136,7 +133,6 @@ nav li a{
     right: 20px;
     justify-content: space-between;
     
-
 }
 
 .hamburger span{
@@ -164,8 +160,12 @@ main{
     flex-direction: row-reverse;
 
     border-bottom: 2px solid rgb(184, 184, 184);
+    
 
 }
+
+
+
 
 .introduce2{
     border-bottom: 2px solid rgb(184, 184, 184);
