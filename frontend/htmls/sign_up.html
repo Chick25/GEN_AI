@@ -5,34 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>GEN AI Sign up</title>
     <link rel="stylesheet" href="../style1.css">
-    <!-- <script>
-        function validateForm(event) {
-            event.preventDefault(); 
-
-            const passwordInput = document.querySelector('input[type="password"]');
-            const password = passwordInput.value;
-            const errorMessage = document.getElementById("error-message");
-
-            
-            const lengthValid = password.length >= 8;
-            const hasUppercase = /[A-Z]/.test(password);
-            const hasNumber = /\d/.test(password);
-
-            if (!lengthValid || !hasUppercase || !hasNumber) {
-                errorMessage.textContent = "Mật khẩu phải có ít nhất 8 ký tự, 1 chữ hoa và 1 số.";
-                return false;
-            }
-
-            errorMessage.textContent = ""; 
-            const buttonElement = document.querySelector("button");
-            buttonElement.addEventListener("click", () => {
-                alert("Mật khẩu hợp lệ! Đăng ký thành công.");
-            });
-            return true;
-        }
-    </script> -->
+    
 </head>
 <body>
     <form id='signup_form' method="POST" >
@@ -42,7 +17,7 @@
             <input type="text" class="namebox" name="firstname" placeholder="Firstname"/>
             <input type="text" class="namebox" name="lastname" placeholder="Lastname"/>
             <br>
-            <input type="text" class="mailbox" name="email" placeholder="Mobile number or email address"/>
+            <input type="text" class="mailbox" name="email" placeholder="Email address"/>
             <br>
             <input type="password" class="mailbox" name="password" placeholder="New Password"/><br>
             <span id="error-message" class="error"></span><br>
@@ -55,7 +30,7 @@
             <br><hr>
         </ul>
     </form>
-
+    
     <script src="../js/script_register.js"></script>
 
 </body>

@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/png" href="img/logoweb_nobg.png">
 
-    <title>GEN AI</title>
+    <title>GEN AI </title>
 </head>
 <body>
 
@@ -17,27 +17,29 @@
         <div class = "header_home">
             <img src="img/logoweb_nobg.png" alt="logo" class="logo_img">
 
-                <!-- <div class="menu_container"> -->
-                    <!-- <div class="hamburger" id="hamburger">
+                <div class="menu_container"> 
+                   <div class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div> -->
+                    </div>
               
                     <nav id ="nav-menu">
-                        <ul>
+                        <ul class="header_home_menu">
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="course.html">Courses</a>
+                                <a href="htmls/course.html">Courses</a>
                             </li>
                             <li>
-                                <a href="resources.html">Resources</a>
+                                <a href="htmls/resource.html">Resources</a>
                             </li>
                             <li>
-                                <input type="button" class ="button" value="Login" onclick="location.href='login.html'">
-                                <input type="button" class ="button" value="Sign up" onclick="location.href='/htmls/sign_up.html'">
+                                <div class="button_group">
+                                    <button class ="button" value="Login" onclick="location.href='htmls/login.html'">Login</button>
+                                    <button class ="button" value="Sign up" onclick="location.href='htmls/sign_up.html'">Sign</button>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -47,21 +49,23 @@
 
     <main>
         <section class="introduce">
-            <h2>AI tạo sinh là gì?</h2>
+            <h2>🤖 AI tạo sinh là gì?</h2>
         <br>
             <div class="content_intro">
                 <p>AI tạo sinh, hay gen AI, là một loại trí tuệ nhân tạo (AI) có thể tạo ra nội dung và ý tưởng mới, như hình ảnh và video, đồng thời sử dụng lại kiến thức mà AI tạo sinh đã biết để giải quyết các vấn đề mới.</p>
                 <br>
             </div>
 
-            <input type="button" class="button" value="Chuyển đến khóa học" onclick="location.href='course.html'">
+            <button class="button" onclick="location.href='htmls/course.html'">
+                <span class="scroll">Chuyển đến khóa học</span>
+            </button>
 
         </section>
         
         <br>
         <section class="introduce1">
             <div class="content">
-                <h2>GEN AI là gì?</h2>
+                <h2>🔍 GEN AI là gì?</h2>
                 <br>
                 <p>Trí tuệ nhân tạo tạo sinh, hay còn gọi là AI tạo sinh hoặc viết tắt là gen AI, là một dạng AI có thể tạo ra nội dung và ý tưởng mới, bao gồm cả các cuộc trò chuyện, câu chuyện,
                     hình ảnh, video và âm nhạc. AI tạo sinh có thể học ngôn ngữ của con người, ngôn ngữ lập trình, nghệ thuật, hóa học, sinh học hoặc bất kỳ lĩnh vực phức tạp nào. AI tạo sinh sử
@@ -75,7 +79,7 @@
         </section>
         <br>
         <section class="introduce2">
-            <h2>Các công nghệ liên quan</h2>
+            <h2>⚙️ Các công nghệ liên quan</h2>
             <br>
             <p>Để hiểu rõ hơn về Generative AI, trước tiên chúng ta cần hiểu về các công nghệ liên quan như trí tuệ nhân tạo, học máy, và học sâu.</p>
             <br>
@@ -91,7 +95,7 @@
         </section>
         <br>
         <section class="introduce3">
-            <h2>AI tạo sinh hoạt động như thế nào?</h2>
+            <h2>🔄 AI tạo sinh hoạt động như thế nào?</h2>
             <br>
             <p>Các mô hình AI tạo sinh sử dụng mạng thần kinh để xác định các mẫu và cấu trúc trong dữ liệu hiện có, từ đó tạo nội dung mới và độc nhất.</p>
             <br>
@@ -101,31 +105,14 @@
 
         </section>
         <br>
-        <!-- <section class="introduce4">
-            <h2>Ứng dụng thực tế của Generative AI</h2>
-            <br>
-            
-            <div class="card_4">
-                <div class="card41">
-                    <p><strong>Tạo hình ảnh bằng AI: </strong> Một mô hình Generative AI có thể tạo ra hình ảnh của một con mèo dễ thương, hoàn toàn mới mẻ và độc đáo.</p>
-                    <img src="img/ai_img1.webp" alt="img1" class="card_img">
-                    
-                </div>
-
-                <div class="card42">
-                    
-                </div>
-
-            </div>
-        </section> -->
-
+        
 
     </main>
 
     <footer>
 
         <div class="footer_logo">
-            <a href="https://github.com/Chick25/Generative-AI " target="_blank">
+            <a href="https://github.com/Chick25/GEN_AI " target="_blank">
             <img src="img/GitHub-Symbol.png" alt="logo" class="logo_img_ft">
             <!-- <a href="https://github.com/Chick25/Generative-AI" target="_blank"></a> -->
             </a>
@@ -146,6 +133,6 @@
         <p>Copy right &copy;2025 Gen AI. All rights reserved.</p>
         
     </footer>
-<script src="script.js"></script>
+<script src="js/script_home.js"></script>
 </body>
 </html>
