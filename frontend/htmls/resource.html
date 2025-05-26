@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,3 +156,162 @@
 <script src="../js/script_home.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" type="image/png" href="../img/logoweb_nobg.png">
+
+    <title>GEN AI Resources</title>
+</head>
+<body>
+    <header>
+        <div class = "header_home">
+            <img src="../img/logoweb_nobg.png" alt="logo" class="logo_img">
+
+                <div class="menu_container"> 
+                   <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+              
+                    <nav id ="nav-menu">
+                        <ul class="header_home_menu">
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="course.html">Courses</a>
+                            </li>
+                            <li>
+                                <a href="resource.html">Resources</a>
+                            </li>
+                            <li>
+                                <div class="button_group">
+                                    <button class ="button" value="Login" onclick="location.href='../htmls/login.html'">Login</button>
+                                    <button class ="button" value="Sign up" onclick="location.href='../htmls/sign_up.html'">Sign</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+        </div>    
+    </header>
+
+    <main>
+        <h1 class="sc">🔍 Khám phá thêm</h1>
+        <p>Khám phá những cuốn sách, framework, bộ dữ liệu, hướng dẫn và cộng đồng tốt nhất để nâng cao kiến thức và kỹ năng của bạn trong lĩnh vực Trí tuệ nhân tạo sinh (Generative AI). Chúng tôi đã tuyển chọn các tài nguyên phù hợp với mọi trình độ, từ người mới bắt đầu đến những người thực hành nâng cao.</p>
+        <div class="resources_title">
+           <button class="button_rc" onclick="showContent('item1')">All Resources</button>
+           <button class="button_rc" onclick="showContent('item2')">Books & publication</button>
+           <button class="button_rc" onclick="showContent('item3')">Tools & Libraries</button>
+           <button class="button_rc" onclick="showContent('item4')">Tutorial</button>
+        </div>
+
+        <div class="item1_all">
+
+            <div id="item1">
+                <a href ="https://www.deeplearningbook.org/" target="_blank">
+                <h2>Deep Learning</h2>
+                <section class="title_sc">
+                    <p>Book</p>
+                    <p>Foundational</p> 
+                </section>
+                <p>Cuốn giáo trình kinh điển về học sâu (deep learning) của Ian Goodfellow, Yoshua Bengio và Aaron Courville. Cuốn sách này trình bày nền tảng toán học cần thiết để hiểu các mô hình sinh (generative models).</p>
+                </a>
+            </div>
+
+            <div id="item1">
+                <a href="https://huggingface.co/docs/transformers/v4.36.1/index" target="_blank">
+                <h2>Hugging Face Transformers</h2>
+                <section class="title_sc">
+                    <p>Library</p>
+                    <p>Text Generation</p>
+                </section>
+                <p>Một thư viện mã nguồn mở cung cấp hàng nghìn mô hình đã được huấn luyện sẵn cho các tác vụ xử lý ngôn ngữ tự nhiên (NLP). Đây là công cụ thiết yếu khi làm việc với các mô hình sinh dựa trên kiến trúc transformer.</p>
+                </a>
+            </div>    
+
+            <div id="item1">
+                <a href="https://deepgenerativemodels.github.io/" target="_blank">
+                <h2>Generative Deep Learning</h2>
+                <section class="title_sc">
+                    <p>Book</p>
+                    <p>Practical</p>
+                </section>
+                <p>Hướng dẫn thực hành về triển khai các mô hình sinh (generative models), từ GANs và VAEs cơ bản đến các kiến trúc nâng cao. Bao gồm các ứng dụng thực tế và ví dụ mã nguồn.</p>
+                </a>
+            </div>
+
+            <div id="item1">
+                <a href="https://pytorch.org/" target="_blank">
+                <h2>PyTorch</h2>
+                <section class="title_sc">
+                    <p>Framework</p>
+                    <p>Deep Learning</p>
+                </section>
+                <p>Một framework học sâu linh hoạt với phương pháp tiếp cận ưu tiên Python. Được sử dụng rộng rãi để triển khai và huấn luyện các mô hình sinh, đồng thời có cộng đồng hỗ trợ tuyệt vời.</p>
+                </a>
+            </div>
+
+        </div>
+
+        <h1 class="sc">Các cộng đồng trực tuyến hàng đầu</h1>
+        <div class="community">
+            <section class="cm1">
+                <!-- <img src="../img/hugging_face.png" alt="hugging_face"> -->
+                <a href="https://huggingface.co/docs/transformers/en/community" target="_blank">
+                <h2>Hugging Face Community</h2><br>
+                <p>Tham gia thảo luận về các mô hình transformer, chia sẻ dự án của bạn và nhận hỗ trợ từ chính những người tạo ra các thư viện NLP nổi tiếng. Diễn đàn cộng đồng và máy chủ Discord là những nguồn tài nguyên tuyệt vời để học hỏi và kết nối.</p>
+            </section>    
+
+            <section class="cm2">
+                <a href="https://www.reddit.com/r/MachineLearning/" target="_blank">
+                <h2>r/MachineLearning</h2><br>
+                <p>Cộng đồng học máy lớn nhất trên Reddit, thường xuyên có các cuộc thảo luận về nghiên cứu, triển khai và ứng dụng của trí tuệ nhân tạo sinh (generative AI). Đây là nơi tuyệt vời để cập nhật các xu hướng mới nhất.</p>
+            </section>
+
+            <section class="cm3">
+                <a href="https://community.openai.com/" target="_blank">
+                <h2>OpenAI Community Forum</h2><br>
+                <p>Cộng đồng dành cho người dùng ChatGPT, DALL·E, Codex, và nhà phát triển xây dựng ứng dụng AI.</p>
+            </section>
+
+        </div>
+
+      
+
+    </main>
+
+<footer>
+
+        <div class="footer_logo">
+            <a href="https://github.com/Chick25/GEN_AI " target="_blank">
+            <img src="../img/GitHub-Symbol.png" alt="logo" class="logo_img_ft">
+            <!-- <a href="https://github.com/Chick25/Generative-AI" target="_blank"></a> -->
+            </a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact us</a>
+            </li>
+        </ul>
+
+        <p>Copy right &copy;2025 Gen AI. All rights reserved.</p>
+        
+    </footer>
+<script src="../js/script_home.js"></script>
+</body>
+</html>
+>>>>>>> taodeptrai
