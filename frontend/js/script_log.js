@@ -28,7 +28,13 @@ function validateForm(event){
             document.getElementById('message').innerText = '✅ ' + data.message;
             console.log('User: ', data.user);
 
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('userEmail', data.user.email);
+
             window.location.href="../htmls/course.html";
+
+            
+
 
         }else{
             document.getElementById('message').innerText = '❌ ' + data.message;

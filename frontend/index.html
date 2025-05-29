@@ -37,8 +37,16 @@
                             </li>
                             <li>
                                 <div class="button_group">
-                                    <button class ="button" value="Login" onclick="location.href='htmls/login.html'">Login</button>
-                                    <button class ="button" value="Sign up" onclick="location.href='htmls/sign_up.html'">Sign</button>
+                                    <button id="loginBtn" class ="button" value="Login" onclick="location.href='htmls/login.html'">Login</button>
+                                    <button id="signupBtn" class ="button" value="Sign up" onclick="location.href='htmls/sign_up.html'">Sign</button>
+
+                                    <!-- <div id="userAvatar">
+                                        <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2023/08/gumball.jpg" alt="avatar" class="avt">
+                                        <p id="userEmail"></p>
+                                        <button id="logoutBtn">Đăng xuất</button>
+
+                                    </div> -->
+
                                 </div>
                             </li>
                         </ul>
@@ -56,7 +64,7 @@
                 <br>
             </div>
 
-            <button class="button" onclick="location.href='htmls/course.html'">
+            <button class="button" onclick="goToCoursePage()">
                 <span class="scroll">Chuyển đến khóa học</span>
             </button>
 
